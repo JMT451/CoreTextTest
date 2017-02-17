@@ -38,11 +38,11 @@ class CTTextView1: UIView {
 
         var callBack = CTRunDelegateCallbacks(version: kCTRunDelegateVersion1, dealloc: { (refCon) in
             
-        }, getAscent: { (refCon) -> CGFloat in
+        }, getAscent: { (refCon) -> CGFloat in //height
             return 50
-        }, getDescent: { (refCon) -> CGFloat in
+        }, getDescent: { (refCon) -> CGFloat in 
             return 20
-        }) { (refCon) -> CGFloat in
+        }) { (refCon) -> CGFloat in //width
             return 50
         }
         //本地图片
@@ -127,5 +127,12 @@ class CTTextView1: UIView {
                 }
             }
         }
+        //试一下path的问题
+        let roundPath1 = UIBezierPath(ovalIn: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+        let roundPath2 = UIBezierPath(ovalIn: CGRect.init(x: 0, y: 50, width: 100, height: 100))
+        roundPath1.append(roundPath2)
+        UIColor.yellow.setStroke()
+        roundPath1.fill()
+        roundPath1.stroke()
        }
 }

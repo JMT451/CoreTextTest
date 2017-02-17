@@ -9,14 +9,45 @@
 /* Begin PBXBuildFile section */
 		01B205491E306E2B005F9C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B205481E306E2B005F9C39 /* main.m */; };
 		01B2054C1E306E2B005F9C39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2054B1E306E2B005F9C39 /* AppDelegate.m */; };
-		01B2054F1E306E2B005F9C39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2054E1E306E2B005F9C39 /* ViewController.m */; };
 		01B205521E306E2B005F9C39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B205501E306E2B005F9C39 /* Main.storyboard */; };
 		01B205541E306E2B005F9C39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B205531E306E2B005F9C39 /* Assets.xcassets */; };
 		01B205571E306E2B005F9C39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B205551E306E2B005F9C39 /* LaunchScreen.storyboard */; };
 		01B205621E306E2B005F9C39 /* CoreTextTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B205611E306E2B005F9C39 /* CoreTextTestTests.m */; };
 		01B2056D1E306E2B005F9C39 /* CoreTextTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2056C1E306E2B005F9C39 /* CoreTextTestUITests.m */; };
+		521BDBF91E4D5E82002FC20F /* ExtentionUikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521BDBF81E4D5E82002FC20F /* ExtentionUikit.swift */; };
+		52219F071E48DB5B002C0BF6 /* TextKitVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52219F061E48DB5B002C0BF6 /* TextKitVC2.swift */; };
+		52219F091E48DBF4002C0BF6 /* TextKitVC2Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52219F081E48DBF4002C0BF6 /* TextKitVC2Label.swift */; };
+		522E76861E56065A00B1D55F /* JXTSlideClipLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E76831E56065A00B1D55F /* JXTSlideClipLabel.m */; };
+		522E76871E56065A00B1D55F /* ParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E76851E56065A00B1D55F /* ParallaxView.m */; };
+		522E768A1E56067300B1D55F /* TwoStyleTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E76891E56067300B1D55F /* TwoStyleTextVC.m */; };
+		522E768D1E5607BA00B1D55F /* ParallaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E768C1E5607BA00B1D55F /* ParallaxViewController.m */; };
+		522E76901E56080300B1D55F /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 522E768E1E56080300B1D55F /* background.jpg */; };
+		522E76911E56080300B1D55F /* star.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 522E768F1E56080300B1D55F /* star.jpeg */; };
+		522E76961E560CC100B1D55F /* GradientTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E76931E560CC100B1D55F /* GradientTextVC.m */; };
+		522E76971E560CC100B1D55F /* CFGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 522E76951E560CC100B1D55F /* CFGradientLabel.m */; };
+		523C818A1E4C457100D02F3B /* TKSLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C81871E4C457100D02F3B /* TKSLayoutViewController.swift */; };
+		523C818B1E4C457100D02F3B /* TKSLinkDetectingTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C81881E4C457100D02F3B /* TKSLinkDetectingTextStorage.swift */; };
+		523C818C1E4C457100D02F3B /* TKSOutliningLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C81891E4C457100D02F3B /* TKSOutliningLayoutManager.swift */; };
+		523C818E1E4C46BE00D02F3B /* TextKitVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C818D1E4C46BE00D02F3B /* TextKitVC3.swift */; };
+		523C81931E4C4C6500D02F3B /* layout.txt in Resources */ = {isa = PBXBuildFile; fileRef = 523C81921E4C4C6500D02F3B /* layout.txt */; };
+		523C81961E4C4E0300D02F3B /* TextEffetcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C81951E4C4E0300D02F3B /* TextEffetcLabel.swift */; };
+		523C81981E4C4E2C00D02F3B /* TextEffetcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C81971E4C4E2C00D02F3B /* TextEffetcVC.swift */; };
+		5240F9A01E50D04A00AF2F00 /* TextLayerLabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240F99F1E50D04A00AF2F00 /* TextLayerLabelVC.swift */; };
+		5240F9A51E50D06A00AF2F00 /* AUIAnimatableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5240F9A21E50D06A00AF2F00 /* AUIAnimatableLabel.m */; };
+		5240F9A61E50D06A00AF2F00 /* UIFont+CoreTextExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5240F9A41E50D06A00AF2F00 /* UIFont+CoreTextExtensions.m */; };
+		5240F9A91E50D10600AF2F00 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5240F9A81E50D10600AF2F00 /* RootViewController.m */; };
+		5240F9AB1E50D1BE00AF2F00 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5240F9AA1E50D1BE00AF2F00 /* RootViewController.xib */; };
+		5240F9AE1E50D25000AF2F00 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5240F9AD1E50D25000AF2F00 /* UINavigationBar+Awesome.m */; };
+		5240F9BB1E5285A400AF2F00 /* FontDrawPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5240F9BA1E5285A300AF2F00 /* FontDrawPathView.swift */; };
+		524713601E55A152001362CC /* OtherList1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5247135F1E55A152001362CC /* OtherList1.m */; };
+		524713631E55A17E001362CC /* PerspectiveTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 524713621E55A17E001362CC /* PerspectiveTextView.m */; };
+		5247136B1E55BA3F001362CC /* OtherList1Detail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5247136A1E55BA3F001362CC /* OtherList1Detail.m */; };
+		5247136E1E55BA84001362CC /* RSMaskedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5247136D1E55BA84001362CC /* RSMaskedLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52494E7B1E48A483001738DB /* bslr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52494E7A1E48A483001738DB /* bslr.ttf */; };
+		52494E7E1E48ABFD001738DB /* UIFont+Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 52494E7D1E48ABFD001738DB /* UIFont+Generator.m */; };
+		52494E801E48B761001738DB /* kabuqinuo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52494E7F1E48B761001738DB /* kabuqinuo.otf */; };
 		5256790E1E307680002ACB1E /* RootTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5256790D1E307680002ACB1E /* RootTVC.m */; };
-		525679111E3078DD002ACB1E /* List1TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525679101E3078DD002ACB1E /* List1TVC.swift */; };
+		525679111E3078DD002ACB1E /* List1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525679101E3078DD002ACB1E /* List1.swift */; };
 		5277E7D21E33B5E2006ACB94 /* List1DVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7D11E33B5E2006ACB94 /* List1DVC.m */; };
 		5277E7D41E33B7EA006ACB94 /* CTTextView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7D31E33B7EA006ACB94 /* CTTextView1.swift */; };
 		5277E7D81E34988A006ACB94 /* hs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5277E7D61E34988A006ACB94 /* hs.jpg */; };
@@ -24,6 +55,18 @@
 		5277E7DB1E35BDA1006ACB94 /* CTTextView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7DA1E35BDA1006ACB94 /* CTTextView2.swift */; };
 		5277E7DD1E35BDD6006ACB94 /* List1DVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7DC1E35BDD6006ACB94 /* List1DVC2.swift */; };
 		5277E7E11E35DF68006ACB94 /* CTTextView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7E01E35DF68006ACB94 /* CTTextView3.swift */; };
+		5277E7E31E370416006ACB94 /* List2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7E21E370416006ACB94 /* List2.swift */; };
+		5277E7E61E3704C5006ACB94 /* ListVC2TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7E51E3704C5006ACB94 /* ListVC2TestView.swift */; };
+		5277E7EC1E3866FF006ACB94 /* List3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7EB1E3866FF006ACB94 /* List3.m */; };
+		5277E7EF1E38671C006ACB94 /* List3TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277E7EE1E38671C006ACB94 /* List3TextView.m */; };
+		52CE02781E4848AE002F54A2 /* TextKitVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE02771E4848AE002F54A2 /* TextKitVC1.swift */; };
+		52CE027B1E4849CC002F54A2 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52CE02791E4849CC002F54A2 /* Starjedi.ttf */; };
+		52CE027C1E4849CC002F54A2 /* stars in Resources */ = {isa = PBXBuildFile; fileRef = 52CE027A1E4849CC002F54A2 /* stars */; };
+		52F9C91E1E4F1CD600C44F24 /* TELayerAniamtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9C91D1E4F1CD600C44F24 /* TELayerAniamtion.swift */; };
+		52FC99111E530BE900020E54 /* ListVC4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC990F1E530BE900020E54 /* ListVC4.swift */; };
+		52FC99121E530BE900020E54 /* ListVC4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52FC99101E530BE900020E54 /* ListVC4.xib */; };
+		52FC99141E53FF3D00020E54 /* NotoEmoji-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FC99131E53FF3D00020E54 /* NotoEmoji-Regular.ttf */; };
+		52FC99161E54006500020E54 /* NotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FC99151E54006500020E54 /* NotoMono-Regular.ttf */; };
 		5579F1A2D23A940571C6C086 /* Pods_CoreTextTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94ACB93A59EF1CC97746545D /* Pods_CoreTextTest.framework */; };
 		64157E9927E1C62E128764AF /* Pods_CoreTextTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F9E45604C44AE83B535391 /* Pods_CoreTextTestTests.framework */; };
 		8607ABD4DDE29F4B69774400 /* Pods_CoreTextTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3C35126A49B61296E672BE /* Pods_CoreTextTestUITests.framework */; };
@@ -51,8 +94,6 @@
 		01B205481E306E2B005F9C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01B2054A1E306E2B005F9C39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01B2054B1E306E2B005F9C39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		01B2054D1E306E2B005F9C39 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		01B2054E1E306E2B005F9C39 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		01B205511E306E2B005F9C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01B205531E306E2B005F9C39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B205561E306E2B005F9C39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,10 +105,57 @@
 		01B2056C1E306E2B005F9C39 /* CoreTextTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextTestUITests.m; sourceTree = "<group>"; };
 		01B2056E1E306E2B005F9C39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C3C35126A49B61296E672BE /* Pods_CoreTextTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTextTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		521BDBF81E4D5E82002FC20F /* ExtentionUikit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionUikit.swift; sourceTree = "<group>"; };
+		52219F061E48DB5B002C0BF6 /* TextKitVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC2.swift; sourceTree = "<group>"; };
+		52219F081E48DBF4002C0BF6 /* TextKitVC2Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC2Label.swift; sourceTree = "<group>"; };
+		522E76821E56065A00B1D55F /* JXTSlideClipLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTSlideClipLabel.h; sourceTree = "<group>"; };
+		522E76831E56065A00B1D55F /* JXTSlideClipLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTSlideClipLabel.m; sourceTree = "<group>"; };
+		522E76841E56065A00B1D55F /* ParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxView.h; sourceTree = "<group>"; };
+		522E76851E56065A00B1D55F /* ParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxView.m; sourceTree = "<group>"; };
+		522E76881E56067300B1D55F /* TwoStyleTextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoStyleTextVC.h; sourceTree = "<group>"; };
+		522E76891E56067300B1D55F /* TwoStyleTextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoStyleTextVC.m; sourceTree = "<group>"; };
+		522E768B1E5607BA00B1D55F /* ParallaxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxViewController.h; sourceTree = "<group>"; };
+		522E768C1E5607BA00B1D55F /* ParallaxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxViewController.m; sourceTree = "<group>"; };
+		522E768E1E56080300B1D55F /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		522E768F1E56080300B1D55F /* star.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star.jpeg; sourceTree = "<group>"; };
+		522E76921E560CC100B1D55F /* GradientTextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientTextVC.h; sourceTree = "<group>"; };
+		522E76931E560CC100B1D55F /* GradientTextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientTextVC.m; sourceTree = "<group>"; };
+		522E76941E560CC100B1D55F /* CFGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGradientLabel.h; sourceTree = "<group>"; };
+		522E76951E560CC100B1D55F /* CFGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGradientLabel.m; sourceTree = "<group>"; };
+		523C81871E4C457100D02F3B /* TKSLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSLayoutViewController.swift; sourceTree = "<group>"; };
+		523C81881E4C457100D02F3B /* TKSLinkDetectingTextStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSLinkDetectingTextStorage.swift; sourceTree = "<group>"; };
+		523C81891E4C457100D02F3B /* TKSOutliningLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSOutliningLayoutManager.swift; sourceTree = "<group>"; };
+		523C818D1E4C46BE00D02F3B /* TextKitVC3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC3.swift; sourceTree = "<group>"; };
+		523C81921E4C4C6500D02F3B /* layout.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layout.txt; sourceTree = "<group>"; };
+		523C81951E4C4E0300D02F3B /* TextEffetcLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffetcLabel.swift; sourceTree = "<group>"; };
+		523C81971E4C4E2C00D02F3B /* TextEffetcVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEffetcVC.swift; sourceTree = "<group>"; };
+		5240F99F1E50D04A00AF2F00 /* TextLayerLabelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLayerLabelVC.swift; sourceTree = "<group>"; };
+		5240F9A11E50D06A00AF2F00 /* AUIAnimatableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIAnimatableLabel.h; sourceTree = "<group>"; };
+		5240F9A21E50D06A00AF2F00 /* AUIAnimatableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIAnimatableLabel.m; sourceTree = "<group>"; };
+		5240F9A31E50D06A00AF2F00 /* UIFont+CoreTextExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CoreTextExtensions.h"; sourceTree = "<group>"; };
+		5240F9A41E50D06A00AF2F00 /* UIFont+CoreTextExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CoreTextExtensions.m"; sourceTree = "<group>"; };
+		5240F9A71E50D10600AF2F00 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		5240F9A81E50D10600AF2F00 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		5240F9AA1E50D1BE00AF2F00 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		5240F9AC1E50D25000AF2F00 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		5240F9AD1E50D25000AF2F00 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		5240F9BA1E5285A300AF2F00 /* FontDrawPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontDrawPathView.swift; sourceTree = "<group>"; };
+		5247135E1E55A152001362CC /* OtherList1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherList1.h; sourceTree = "<group>"; };
+		5247135F1E55A152001362CC /* OtherList1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherList1.m; sourceTree = "<group>"; };
+		524713611E55A17E001362CC /* PerspectiveTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerspectiveTextView.h; sourceTree = "<group>"; };
+		524713621E55A17E001362CC /* PerspectiveTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerspectiveTextView.m; sourceTree = "<group>"; };
+		524713691E55BA3F001362CC /* OtherList1Detail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherList1Detail.h; sourceTree = "<group>"; };
+		5247136A1E55BA3F001362CC /* OtherList1Detail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherList1Detail.m; sourceTree = "<group>"; };
+		5247136C1E55BA84001362CC /* RSMaskedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSMaskedLabel.h; sourceTree = "<group>"; };
+		5247136D1E55BA84001362CC /* RSMaskedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSMaskedLabel.m; sourceTree = "<group>"; };
+		52494E7A1E48A483001738DB /* bslr.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bslr.ttf; sourceTree = "<group>"; };
+		52494E7C1E48ABFD001738DB /* UIFont+Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Generator.h"; sourceTree = "<group>"; };
+		52494E7D1E48ABFD001738DB /* UIFont+Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Generator.m"; sourceTree = "<group>"; };
+		52494E7F1E48B761001738DB /* kabuqinuo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = kabuqinuo.otf; sourceTree = "<group>"; };
 		5256790C1E307680002ACB1E /* RootTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTVC.h; sourceTree = "<group>"; };
 		5256790D1E307680002ACB1E /* RootTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTVC.m; sourceTree = "<group>"; };
 		5256790F1E3078DD002ACB1E /* CoreTextTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreTextTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		525679101E3078DD002ACB1E /* List1TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List1TVC.swift; sourceTree = "<group>"; };
+		525679101E3078DD002ACB1E /* List1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List1.swift; sourceTree = "<group>"; };
 		5277E7D01E33B5E2006ACB94 /* List1DVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List1DVC.h; sourceTree = "<group>"; };
 		5277E7D11E33B5E2006ACB94 /* List1DVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List1DVC.m; sourceTree = "<group>"; };
 		5277E7D31E33B7EA006ACB94 /* CTTextView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTTextView1.swift; sourceTree = "<group>"; };
@@ -77,6 +165,20 @@
 		5277E7DA1E35BDA1006ACB94 /* CTTextView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTTextView2.swift; sourceTree = "<group>"; };
 		5277E7DC1E35BDD6006ACB94 /* List1DVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List1DVC2.swift; sourceTree = "<group>"; };
 		5277E7E01E35DF68006ACB94 /* CTTextView3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTTextView3.swift; sourceTree = "<group>"; };
+		5277E7E21E370416006ACB94 /* List2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List2.swift; sourceTree = "<group>"; };
+		5277E7E51E3704C5006ACB94 /* ListVC2TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC2TestView.swift; sourceTree = "<group>"; };
+		5277E7EA1E3866FF006ACB94 /* List3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List3.h; sourceTree = "<group>"; };
+		5277E7EB1E3866FF006ACB94 /* List3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List3.m; sourceTree = "<group>"; };
+		5277E7ED1E38671C006ACB94 /* List3TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List3TextView.h; sourceTree = "<group>"; };
+		5277E7EE1E38671C006ACB94 /* List3TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List3TextView.m; sourceTree = "<group>"; };
+		52CE02771E4848AE002F54A2 /* TextKitVC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextKitVC1.swift; sourceTree = "<group>"; };
+		52CE02791E4849CC002F54A2 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		52CE027A1E4849CC002F54A2 /* stars */ = {isa = PBXFileReference; lastKnownFileType = file; path = stars; sourceTree = "<group>"; };
+		52F9C91D1E4F1CD600C44F24 /* TELayerAniamtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TELayerAniamtion.swift; sourceTree = "<group>"; };
+		52FC990F1E530BE900020E54 /* ListVC4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC4.swift; sourceTree = "<group>"; };
+		52FC99101E530BE900020E54 /* ListVC4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListVC4.xib; sourceTree = "<group>"; };
+		52FC99131E53FF3D00020E54 /* NotoEmoji-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoEmoji-Regular.ttf"; sourceTree = "<group>"; };
+		52FC99151E54006500020E54 /* NotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoMono-Regular.ttf"; sourceTree = "<group>"; };
 		60F9E45604C44AE83B535391 /* Pods_CoreTextTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTextTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ACB93A59EF1CC97746545D /* Pods_CoreTextTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTextTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E290CBC82E39FD43D1ABFA /* Pods-CoreTextTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTextTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreTextTestTests/Pods-CoreTextTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,12 +245,23 @@
 				5277E7D51E346778006ACB94 /* PrefixHeader.pch */,
 				01B2054A1E306E2B005F9C39 /* AppDelegate.h */,
 				01B2054B1E306E2B005F9C39 /* AppDelegate.m */,
-				01B2054D1E306E2B005F9C39 /* ViewController.h */,
-				01B2054E1E306E2B005F9C39 /* ViewController.m */,
+				5240F9AF1E50D25A00AF2F00 /* Catagory */,
 				5256790C1E307680002ACB1E /* RootTVC.h */,
 				5256790D1E307680002ACB1E /* RootTVC.m */,
 				5277E7CF1E33B5A0006ACB94 /* swift长篇高能 */,
+				5277E7E41E370422006ACB94 /* 测试Ascent、Descent、Leading */,
+				5277E7E71E3866C5006ACB94 /* CoreText实现图文混排 */,
+				5240F9B91E52854500AF2F00 /* 根据字体路径动画 */,
+				52FC990C1E530B2500020E54 /* *************************** */,
+				52CE02761E484876002F54A2 /* Translucid文本内嵌图片 */,
+				52219F051E48DAE0002C0BF6 /* Swift3.0图文混排进阶（三）TextKit */,
+				52219F0A1E4B04C0002C0BF6 /* 文本动画 */,
+				5247135C1E55A0F5001362CC /* *************************** */,
+				5247135D1E55A109001362CC /* 画可以透视背景的文字View */,
+				522E76811E56061E00B1D55F /* 滑块展示两种字体！ */,
+				5247136F1E55BC6A001362CC /* 渐变颜色的字体的实现！！！ */,
 				01B205501E306E2B005F9C39 /* Main.storyboard */,
+				523C818F1E4C49F900D02F3B /* Tool */,
 				01B205531E306E2B005F9C39 /* Assets.xcassets */,
 				01B205551E306E2B005F9C39 /* LaunchScreen.storyboard */,
 				01B205581E306E2B005F9C39 /* Info.plist */,
@@ -207,10 +320,146 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		52219F051E48DAE0002C0BF6 /* Swift3.0图文混排进阶（三）TextKit */ = {
+			isa = PBXGroup;
+			children = (
+				52219F061E48DB5B002C0BF6 /* TextKitVC2.swift */,
+				52219F081E48DBF4002C0BF6 /* TextKitVC2Label.swift */,
+			);
+			name = "Swift3.0图文混排进阶（三）TextKit";
+			sourceTree = "<group>";
+		};
+		52219F0A1E4B04C0002C0BF6 /* 文本动画 */ = {
+			isa = PBXGroup;
+			children = (
+				523C818D1E4C46BE00D02F3B /* TextKitVC3.swift */,
+				523C81861E4C457100D02F3B /* Layout */,
+				523C81941E4C4DC100D02F3B /* TextEffect */,
+				5240F99E1E50D00200AF2F00 /* TextLayer替换UILabel */,
+			);
+			name = "文本动画";
+			sourceTree = "<group>";
+		};
+		522E76811E56061E00B1D55F /* 滑块展示两种字体！ */ = {
+			isa = PBXGroup;
+			children = (
+				522E76881E56067300B1D55F /* TwoStyleTextVC.h */,
+				522E76891E56067300B1D55F /* TwoStyleTextVC.m */,
+				522E76821E56065A00B1D55F /* JXTSlideClipLabel.h */,
+				522E76831E56065A00B1D55F /* JXTSlideClipLabel.m */,
+				522E76841E56065A00B1D55F /* ParallaxView.h */,
+				522E76851E56065A00B1D55F /* ParallaxView.m */,
+				522E768B1E5607BA00B1D55F /* ParallaxViewController.h */,
+				522E768C1E5607BA00B1D55F /* ParallaxViewController.m */,
+				522E768E1E56080300B1D55F /* background.jpg */,
+				522E768F1E56080300B1D55F /* star.jpeg */,
+			);
+			name = "滑块展示两种字体！";
+			sourceTree = "<group>";
+		};
+		523C81861E4C457100D02F3B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				523C81921E4C4C6500D02F3B /* layout.txt */,
+				523C81871E4C457100D02F3B /* TKSLayoutViewController.swift */,
+				523C81881E4C457100D02F3B /* TKSLinkDetectingTextStorage.swift */,
+				523C81891E4C457100D02F3B /* TKSOutliningLayoutManager.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		523C818F1E4C49F900D02F3B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				521BDBF81E4D5E82002FC20F /* ExtentionUikit.swift */,
+			);
+			name = Tool;
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		523C81941E4C4DC100D02F3B /* TextEffect */ = {
+			isa = PBXGroup;
+			children = (
+				523C81971E4C4E2C00D02F3B /* TextEffetcVC.swift */,
+				523C81951E4C4E0300D02F3B /* TextEffetcLabel.swift */,
+				52F9C91D1E4F1CD600C44F24 /* TELayerAniamtion.swift */,
+			);
+			name = TextEffect;
+			sourceTree = "<group>";
+		};
+		5240F99E1E50D00200AF2F00 /* TextLayer替换UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				5240F99F1E50D04A00AF2F00 /* TextLayerLabelVC.swift */,
+				5240F9A71E50D10600AF2F00 /* RootViewController.h */,
+				5240F9A81E50D10600AF2F00 /* RootViewController.m */,
+				5240F9AA1E50D1BE00AF2F00 /* RootViewController.xib */,
+				5240F9A11E50D06A00AF2F00 /* AUIAnimatableLabel.h */,
+				5240F9A21E50D06A00AF2F00 /* AUIAnimatableLabel.m */,
+				5240F9A31E50D06A00AF2F00 /* UIFont+CoreTextExtensions.h */,
+				5240F9A41E50D06A00AF2F00 /* UIFont+CoreTextExtensions.m */,
+			);
+			name = "TextLayer替换UILabel";
+			sourceTree = "<group>";
+		};
+		5240F9AF1E50D25A00AF2F00 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				5240F9AC1E50D25000AF2F00 /* UINavigationBar+Awesome.h */,
+				5240F9AD1E50D25000AF2F00 /* UINavigationBar+Awesome.m */,
+			);
+			name = Catagory;
+			sourceTree = "<group>";
+		};
+		5240F9B91E52854500AF2F00 /* 根据字体路径动画 */ = {
+			isa = PBXGroup;
+			children = (
+				52FC99131E53FF3D00020E54 /* NotoEmoji-Regular.ttf */,
+				52FC99151E54006500020E54 /* NotoMono-Regular.ttf */,
+				5240F9BA1E5285A300AF2F00 /* FontDrawPathView.swift */,
+				52FC990F1E530BE900020E54 /* ListVC4.swift */,
+				52FC99101E530BE900020E54 /* ListVC4.xib */,
+			);
+			name = "根据字体路径动画";
+			sourceTree = "<group>";
+		};
+		5247135C1E55A0F5001362CC /* *************************** */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "***************************";
+			sourceTree = "<group>";
+		};
+		5247135D1E55A109001362CC /* 画可以透视背景的文字View */ = {
+			isa = PBXGroup;
+			children = (
+				5247135E1E55A152001362CC /* OtherList1.h */,
+				5247135F1E55A152001362CC /* OtherList1.m */,
+				524713611E55A17E001362CC /* PerspectiveTextView.h */,
+				524713621E55A17E001362CC /* PerspectiveTextView.m */,
+				524713691E55BA3F001362CC /* OtherList1Detail.h */,
+				5247136A1E55BA3F001362CC /* OtherList1Detail.m */,
+				5247136C1E55BA84001362CC /* RSMaskedLabel.h */,
+				5247136D1E55BA84001362CC /* RSMaskedLabel.m */,
+			);
+			name = "画可以透视背景的文字View";
+			sourceTree = "<group>";
+		};
+		5247136F1E55BC6A001362CC /* 渐变颜色的字体的实现！！！ */ = {
+			isa = PBXGroup;
+			children = (
+				522E76921E560CC100B1D55F /* GradientTextVC.h */,
+				522E76931E560CC100B1D55F /* GradientTextVC.m */,
+				522E76941E560CC100B1D55F /* CFGradientLabel.h */,
+				522E76951E560CC100B1D55F /* CFGradientLabel.m */,
+			);
+			name = "渐变颜色的字体的实现！！！";
+			sourceTree = "<group>";
+		};
 		5277E7CF1E33B5A0006ACB94 /* swift长篇高能 */ = {
 			isa = PBXGroup;
 			children = (
-				525679101E3078DD002ACB1E /* List1TVC.swift */,
+				525679101E3078DD002ACB1E /* List1.swift */,
 				5277E7DE1E35BE37006ACB94 /* DVC1 */,
 				5277E7DF1E35BE45006ACB94 /* DVC2 */,
 				5277E7D61E34988A006ACB94 /* hs.jpg */,
@@ -237,6 +486,47 @@
 				5277E7E01E35DF68006ACB94 /* CTTextView3.swift */,
 			);
 			name = DVC2;
+			sourceTree = "<group>";
+		};
+		5277E7E41E370422006ACB94 /* 测试Ascent、Descent、Leading */ = {
+			isa = PBXGroup;
+			children = (
+				5277E7E21E370416006ACB94 /* List2.swift */,
+				5277E7E51E3704C5006ACB94 /* ListVC2TestView.swift */,
+			);
+			name = "测试Ascent、Descent、Leading";
+			sourceTree = "<group>";
+		};
+		5277E7E71E3866C5006ACB94 /* CoreText实现图文混排 */ = {
+			isa = PBXGroup;
+			children = (
+				5277E7EA1E3866FF006ACB94 /* List3.h */,
+				5277E7EB1E3866FF006ACB94 /* List3.m */,
+				5277E7ED1E38671C006ACB94 /* List3TextView.h */,
+				5277E7EE1E38671C006ACB94 /* List3TextView.m */,
+			);
+			name = "CoreText实现图文混排";
+			sourceTree = "<group>";
+		};
+		52CE02761E484876002F54A2 /* Translucid文本内嵌图片 */ = {
+			isa = PBXGroup;
+			children = (
+				52CE02771E4848AE002F54A2 /* TextKitVC1.swift */,
+				52494E7A1E48A483001738DB /* bslr.ttf */,
+				52494E7F1E48B761001738DB /* kabuqinuo.otf */,
+				52CE02791E4849CC002F54A2 /* Starjedi.ttf */,
+				52CE027A1E4849CC002F54A2 /* stars */,
+				52494E7C1E48ABFD001738DB /* UIFont+Generator.h */,
+				52494E7D1E48ABFD001738DB /* UIFont+Generator.m */,
+			);
+			name = "Translucid文本内嵌图片";
+			sourceTree = "<group>";
+		};
+		52FC990C1E530B2500020E54 /* *************************** */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "***************************";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,10 +646,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523C81931E4C4C6500D02F3B /* layout.txt in Resources */,
 				5277E7D91E34988A006ACB94 /* mc.jpg in Resources */,
+				52FC99161E54006500020E54 /* NotoMono-Regular.ttf in Resources */,
+				52CE027C1E4849CC002F54A2 /* stars in Resources */,
+				52494E801E48B761001738DB /* kabuqinuo.otf in Resources */,
 				5277E7D81E34988A006ACB94 /* hs.jpg in Resources */,
+				522E76901E56080300B1D55F /* background.jpg in Resources */,
+				522E76911E56080300B1D55F /* star.jpeg in Resources */,
 				01B205571E306E2B005F9C39 /* LaunchScreen.storyboard in Resources */,
 				01B205541E306E2B005F9C39 /* Assets.xcassets in Resources */,
+				52494E7B1E48A483001738DB /* bslr.ttf in Resources */,
+				5240F9AB1E50D1BE00AF2F00 /* RootViewController.xib in Resources */,
+				52FC99121E530BE900020E54 /* ListVC4.xib in Resources */,
+				52FC99141E53FF3D00020E54 /* NotoEmoji-Regular.ttf in Resources */,
+				52CE027B1E4849CC002F54A2 /* Starjedi.ttf in Resources */,
 				01B205521E306E2B005F9C39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,16 +824,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01B2054F1E306E2B005F9C39 /* ViewController.m in Sources */,
+				524713631E55A17E001362CC /* PerspectiveTextView.m in Sources */,
 				5256790E1E307680002ACB1E /* RootTVC.m in Sources */,
+				5240F9A01E50D04A00AF2F00 /* TextLayerLabelVC.swift in Sources */,
+				523C81981E4C4E2C00D02F3B /* TextEffetcVC.swift in Sources */,
 				5277E7DD1E35BDD6006ACB94 /* List1DVC2.swift in Sources */,
+				522E76961E560CC100B1D55F /* GradientTextVC.m in Sources */,
 				01B2054C1E306E2B005F9C39 /* AppDelegate.m in Sources */,
+				52494E7E1E48ABFD001738DB /* UIFont+Generator.m in Sources */,
+				522E768D1E5607BA00B1D55F /* ParallaxViewController.m in Sources */,
+				522E76871E56065A00B1D55F /* ParallaxView.m in Sources */,
+				522E76861E56065A00B1D55F /* JXTSlideClipLabel.m in Sources */,
+				5277E7EC1E3866FF006ACB94 /* List3.m in Sources */,
+				5240F9A51E50D06A00AF2F00 /* AUIAnimatableLabel.m in Sources */,
+				521BDBF91E4D5E82002FC20F /* ExtentionUikit.swift in Sources */,
+				524713601E55A152001362CC /* OtherList1.m in Sources */,
+				523C818A1E4C457100D02F3B /* TKSLayoutViewController.swift in Sources */,
+				52CE02781E4848AE002F54A2 /* TextKitVC1.swift in Sources */,
 				5277E7E11E35DF68006ACB94 /* CTTextView3.swift in Sources */,
 				5277E7D41E33B7EA006ACB94 /* CTTextView1.swift in Sources */,
-				525679111E3078DD002ACB1E /* List1TVC.swift in Sources */,
+				5240F9A91E50D10600AF2F00 /* RootViewController.m in Sources */,
+				525679111E3078DD002ACB1E /* List1.swift in Sources */,
+				522E768A1E56067300B1D55F /* TwoStyleTextVC.m in Sources */,
+				52F9C91E1E4F1CD600C44F24 /* TELayerAniamtion.swift in Sources */,
+				523C818C1E4C457100D02F3B /* TKSOutliningLayoutManager.swift in Sources */,
 				5277E7DB1E35BDA1006ACB94 /* CTTextView2.swift in Sources */,
+				5240F9A61E50D06A00AF2F00 /* UIFont+CoreTextExtensions.m in Sources */,
 				01B205491E306E2B005F9C39 /* main.m in Sources */,
+				5247136B1E55BA3F001362CC /* OtherList1Detail.m in Sources */,
+				52219F091E48DBF4002C0BF6 /* TextKitVC2Label.swift in Sources */,
+				5247136E1E55BA84001362CC /* RSMaskedLabel.m in Sources */,
+				52219F071E48DB5B002C0BF6 /* TextKitVC2.swift in Sources */,
 				5277E7D21E33B5E2006ACB94 /* List1DVC.m in Sources */,
+				523C81961E4C4E0300D02F3B /* TextEffetcLabel.swift in Sources */,
+				5240F9AE1E50D25000AF2F00 /* UINavigationBar+Awesome.m in Sources */,
+				5277E7EF1E38671C006ACB94 /* List3TextView.m in Sources */,
+				5277E7E61E3704C5006ACB94 /* ListVC2TestView.swift in Sources */,
+				5277E7E31E370416006ACB94 /* List2.swift in Sources */,
+				523C818E1E4C46BE00D02F3B /* TextKitVC3.swift in Sources */,
+				52FC99111E530BE900020E54 /* ListVC4.swift in Sources */,
+				5240F9BB1E5285A400AF2F00 /* FontDrawPathView.swift in Sources */,
+				523C818B1E4C457100D02F3B /* TKSLinkDetectingTextStorage.swift in Sources */,
+				522E76971E560CC100B1D55F /* CFGradientLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,8 +1017,25 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8QB68XF3YG;
 				GCC_PREFIX_HEADER = CoreTextTest/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
 				INFOPLIST_FILE = CoreTextTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ChameleonFramework\"",
+					"-framework",
+					"\"DTCoreText\"",
+					"-framework",
+					"\"DTFoundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"Translucid\"",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.I-MT.CoreTextTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTextTest/CoreTextTest-Bridging-Header.h";
@@ -704,8 +1054,25 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8QB68XF3YG;
 				GCC_PREFIX_HEADER = CoreTextTest/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
 				INFOPLIST_FILE = CoreTextTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"ChameleonFramework\"",
+					"-framework",
+					"\"DTCoreText\"",
+					"-framework",
+					"\"DTFoundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"Translucid\"",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.I-MT.CoreTextTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CoreTextTest/CoreTextTest-Bridging-Header.h";

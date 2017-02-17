@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <CoreText/CoreText.h>
 @interface AppDelegate ()
 
 @end
@@ -17,11 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
-    return YES;
+    
+          return YES;
 }
 
-
+-(UIFont*)customFontWithPath:(NSString*)path size:(CGFloat)size
+{
+    NSURL *fontUrl = [NSURL fileURLWithPath:path];
+    CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)fontUrl);
+    CGFontRef fontRef = CGFontCreateWithDataProvider(fontDataProvider);
+    CGDataProviderRelease(fontDataProvider);
+    CFErrorRef cfError = (__bridge CFErrorRef )[NSError new];
+    CTFontManagerRegisterGraphicsFont(fontRef,&cfError );
+    if (cfError) {
+        NSLog(@"%@",cfError);
+    }
+    NSString *fontName = CFBridgingRelease(CGFontCopyPostScriptName(fontRef));
+    NSLog(@"fontName:%@",fontName);
+    UIFont *font = [UIFont fontWithName:fontName size:size];
+    CGFontRelease(fontRef);
+    return font;
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

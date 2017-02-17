@@ -1,0 +1,6 @@
+framework module Translucid {
+  umbrella header "Translucid-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListVC4" customModule="CoreTextTest" customModuleProvider="target">
+            <connections>
+                <outlet property="drawView" destination="jvx-gP-UGW" id="eWR-n1-2PT"/>
+                <outlet property="slider" destination="wmD-60-SLH" id="4m1-ea-x0y"/>
+                <outlet property="textView" destination="WfJ-uX-cvJ" id="9nz-ZD-BBt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-gP-UGW" customClass="FontDrawPathView" customModule="CoreTextTest" customModuleProvider="target">
+                    <rect key="frame" x="15" y="70" width="384" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="R9c-H3-P6q"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wmD-60-SLH">
+                    <rect key="frame" x="38" y="656" width="338" height="31"/>
+                    <connections>
+                        <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="dhW-FW-bpR"/>
+                    </connections>
+                </slider>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-XT-2D5">
+                    <rect key="frame" x="57" y="528" width="300" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="xtu-WT-H2J"/>
+                    </constraints>
+                    <segments>
+                        <segment title="default"/>
+                        <segment title="动画"/>
+                        <segment title="拖动控制"/>
+                    </segments>
+                    <connections>
+                        <action selector="segAction:" destination="-1" eventType="valueChanged" id="F64-cq-cuQ"/>
+                    </connections>
+                </segmentedControl>
+                <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="2bf-FL-LRp">
+                    <rect key="frame" x="5" y="195" width="202" height="308"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5Of-kR-NoT"/>
+                        <outlet property="delegate" destination="-1" id="772-Tf-B4O"/>
+                    </connections>
+                </pickerView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="666我的天" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WfJ-uX-cvJ">
+                    <rect key="frame" x="207" y="195" width="202" height="263"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8E-4L-ev0">
+                    <rect key="frame" x="277" y="468" width="62" height="30"/>
+                    <state key="normal" title="切换文字"/>
+                    <connections>
+                        <action selector="changeText:" destination="-1" eventType="touchUpInside" id="O8d-rJ-Y3E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.6018243142073092" green="1" blue="0.79320560925625816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x8E-4L-ev0" firstAttribute="top" secondItem="WfJ-uX-cvJ" secondAttribute="bottom" constant="10" id="2Ob-2y-lw4"/>
+                <constraint firstItem="BGK-XT-2D5" firstAttribute="top" secondItem="2bf-FL-LRp" secondAttribute="bottom" constant="25" id="851-iB-jN3"/>
+                <constraint firstItem="x8E-4L-ev0" firstAttribute="centerX" secondItem="WfJ-uX-cvJ" secondAttribute="centerX" id="Alm-Ir-N49"/>
+                <constraint firstItem="jvx-gP-UGW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Cl5-L2-dsg"/>
+                <constraint firstAttribute="trailing" secondItem="wmD-60-SLH" secondAttribute="trailing" constant="40" id="FDg-7k-bdQ"/>
+                <constraint firstItem="jvx-gP-UGW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="HjQ-k1-O2q"/>
+                <constraint firstItem="BGK-XT-2D5" firstAttribute="top" secondItem="x8E-4L-ev0" secondAttribute="bottom" constant="30" id="JeP-9n-zN7"/>
+                <constraint firstAttribute="bottom" secondItem="wmD-60-SLH" secondAttribute="bottom" constant="50" id="PIu-uP-fT8"/>
+                <constraint firstItem="wmD-60-SLH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="RN1-oC-VLV"/>
+                <constraint firstItem="BGK-XT-2D5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UC2-bE-At9"/>
+                <constraint firstItem="2bf-FL-LRp" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b2s-2G-7Xk"/>
+                <constraint firstItem="2bf-FL-LRp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="eRc-Qz-X63"/>
+                <constraint firstItem="WfJ-uX-cvJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eef-5Z-4V3"/>
+                <constraint firstItem="2bf-FL-LRp" firstAttribute="top" secondItem="jvx-gP-UGW" secondAttribute="bottom" constant="5" id="iOs-d8-Ljq"/>
+                <constraint firstItem="WfJ-uX-cvJ" firstAttribute="top" secondItem="jvx-gP-UGW" secondAttribute="bottom" constant="5" id="mA1-rV-Ys0"/>
+                <constraint firstAttribute="trailing" secondItem="WfJ-uX-cvJ" secondAttribute="trailing" constant="5" id="qdF-Bw-vwc"/>
+                <constraint firstAttribute="trailing" secondItem="jvx-gP-UGW" secondAttribute="trailing" constant="15" id="sV8-Dg-cFs"/>
+                <constraint firstItem="wmD-60-SLH" firstAttribute="top" secondItem="BGK-XT-2D5" secondAttribute="bottom" constant="100" id="uxC-JS-cG8"/>
+            </constraints>
+            <point key="canvasLocation" x="34" y="53"/>
+        </view>
+    </objects>
+</document>

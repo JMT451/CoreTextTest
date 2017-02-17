@@ -18,6 +18,7 @@ class CTTextView3: UIView,UIGestureRecognizerDelegate {
             return sizeForText(mutableStr: NSMutableAttributedString(string: attrString)).height
         }
     }
+    var totalHeight2:CGFloat = 0.0
     var sepcialRanges:[NSRange]!
     var pressRange:NSRange?
     var ctFrame :CTFrame?
@@ -35,8 +36,8 @@ class CTTextView3: UIView,UIGestureRecognizerDelegate {
         // 3 绘制区域
         // #MARK: - ??? 替换了下面的path你就会发现这篇的计算高度的方式不对！
 
-//        let path = UIBezierPath(rect: rect)
-      let path =   UIBezierPath(roundedRect: self.bounds, cornerRadius:self.bounds.size.width/2 )
+        let path = UIBezierPath(rect: rect)
+//      let path =   UIBezierPath(roundedRect: self.bounds, cornerRadius:self.bounds.size.width/2 )
         UIColor.red.setStroke()
         path.stroke()
 
@@ -87,11 +88,69 @@ class CTTextView3: UIView,UIGestureRecognizerDelegate {
             CTLineDraw(lineRef, context!)
             //调整坐标
             frameY = frameY - lineDescebnt
-        print(" lineAscent:\(lineAscent),lineDescent:\(lineDescebnt),lineLeading:\(lineLeading),frameY :\(frameY)");
-
+//        print(" lineAscent:\(lineAscent),lineDescent:\(lineDescebnt),lineLeading:\(lineLeading),frameY :\(frameY)");
+            if i == lineCount-1 {
+                totalHeight2 = frameY
+            }
         }
         
         
+    }
+    // #MARK: - 专门计算size的CTFrame方法
+    func caculateSize(){
+        let path = UIBezierPath(rect: CGRect.init(x: 0, y: 0, width: 100, height: 100))
+        //      let path =   UIBezierPath(roundedRect: self.bounds, cornerRadius:self.bounds.size.width/2 )
+        UIColor.red.setStroke()
+        path.stroke()
+        
+        // 5 设置frame
+        let mutableAttrStr = NSMutableAttributedString(string: attrString)
+        self.sepcialRanges = recognizeSpecialString(attrStr: mutableAttrStr)
+        let framesetter = CTFramesetterCreateWithAttributedString(mutableAttrStr)
+        ctFrame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, mutableAttrStr.length), path.cgPath, nil)
+        
+        // 6 取出CTLine 准备一行一行绘制
+        let lines = CTFrameGetLines(ctFrame!)
+        let lineCount = CFArrayGetCount(lines)
+        
+        var lineOrigins:[CGPoint] = Array.init(repeating: CGPoint.zero, count: lineCount)
+        //把frame中的每一行的初始坐标写到数组里，注意CoreText的坐标左下角为原点
+        CTFrameGetLineOrigins(ctFrame!, CFRange.init(location: 0, length: 0), &lineOrigins)
+        // #MARK: - ？？？ 疑问 这个size难道和path没有关系吗？
+        //获取属性字所占的size
+        let size = sizeForText(mutableStr: mutableAttrStr)
+        let height = size.height
+        
+        let font = UIFont.systemFont(ofSize: 14)
+        var frameY:CGFloat = 0
+        //计算每行的高度(总高度除以行数)
+        lineHeight = height/CGFloat(lineCount)
+        
+        
+        for i in 0..<lineCount{
+            let lineRef = unsafeBitCast(CFArrayGetValueAtIndex(lines, i), to: CTLine.self)
+            var lineAscent:CGFloat = 0
+            var lineDescebnt:CGFloat = 0
+            var lineLeading :CGFloat = 0
+            //
+            CTLineGetTypographicBounds(lineRef, &lineAscent, &lineDescebnt, &lineLeading)
+            
+            var lineOrigin = lineOrigins[i]
+            //计算那y值
+            // #MARK: - ？？？ 一直不明白这个计算方式
+            frameY = height - CGFloat(i+1)*lineHeight-font.descender
+            //设置y值
+            lineOrigin.y = frameY
+            
+       
+            //调整坐标
+            frameY = frameY - lineDescebnt
+            print(" lineAscent:\(lineAscent),lineDescent:\(lineDescebnt),lineLeading:\(lineLeading),frameY :\(frameY)");
+            if i == lineCount-1 {
+                totalHeight2 = frameY
+            }
+        }
+
     }
     func sizeForText(mutableStr:NSMutableAttributedString) -> CGSize {
         //创建CTFramesetterRef实例
@@ -103,6 +162,7 @@ class CTTextView3: UIView,UIGestureRecognizerDelegate {
         return coreTextSize
         
     }
+
     // #MARK: - 链接 和人名
     //url的正则
     let regex_url = "(http|ftp|https):\\/\\/[\\w\\-_]+(\\.[\\w\\-_]+)+([\\w\\-\\.,@?^=%&:/~\\+#]*[\\w\\-\\@?^=%&/~\\+#])?"

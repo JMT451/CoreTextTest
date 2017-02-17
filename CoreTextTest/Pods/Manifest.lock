@@ -1,4 +1,7 @@
 PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - DTCoreText (1.6.19):
     - DTCoreText/Core (= 1.6.19)
     - DTFoundation/Core (~> 1.7.5)
@@ -16,17 +19,34 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.11):
     - DTFoundation/Core
+  - Masonry (1.0.2)
   - SnapKit (3.1.2)
+  - Translucid (0.0.2)
 
 DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
   - DTCoreText
+  - Masonry (~> 1.0.2)
   - SnapKit (~> 3.1.2)
+  - Translucid (~> 0.0.2)
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: dcf98f9bf3a632a7f40679b7da46f09681e48526
+    :git: https://github.com/ViccAlexander/Chameleon.git
 
 SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   DTCoreText: 184cc2f460c2177108e8700dfb0eb1b1cb72c99d
   DTFoundation: 0ef29c70a9814e15518694862bd739347abe2a50
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  Translucid: 4272e7415f9bc97f2ea97d9a5756eb0655a8420a
 
-PODFILE CHECKSUM: 01579541e1d75c7ad0465c1ec992dc4b8a1dbf4b
+PODFILE CHECKSUM: 7acccb00ace6b3011cdbc817cd37337a7886dd22
 
 COCOAPODS: 1.2.0.beta.3

@@ -37,10 +37,13 @@ class List1DVC2: UITableViewController {
             let e = e as UIView
             e.removeFromSuperview()
         }
+        cell?.contentView.backgroundColor = UIColor.red
         let view:UIView!
         switch indexPath.row {
         case 0:
-            view = CTTextView2(frame: CGRect.init(x: 0, y: 0, width: Screen_W, height: Screen_W))
+            view = CTTextView2()
+            let newView = view as!CTTextView2
+            newView.frame = CGRect.init(x: 0, y: 0, width: Screen_W-20, height: newView.resultHeight)
             view.backgroundColor=UIColor.gray
         case 1:
             view = CTTextView3()
@@ -60,7 +63,9 @@ class List1DVC2: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var height :CGFloat = 0
         if indexPath.row == 0 {
-           height=Screen_W
+            let newView = CTTextView2()
+            height = newView.resultHeight
+//           height=Screen_W
         }else if indexPath.row==1{
            let view = CTTextView3()
            height=view.totalHeight
